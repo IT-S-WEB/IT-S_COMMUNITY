@@ -1,11 +1,54 @@
 {% extends "base.html" %}
 
 {% block extra_head %}
-{% load static %}
-<link rel="stylesheet" href="{% static 'css/info.css' %}" />
-<script src="{% static 'js/info.js' %}"></script>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/info.css' %}" />
+  <script src="{% static 'js/info.js' %}"></script>
 {% endblock %}
 
 {% block content %}
-<!--메인 콘텐츠 작성-->
+  <div class="info_main">
+    <div class="sidemenu">
+      <ul>
+        <li class="sidemenu-item">
+          <div class="sidemenu-item-title" onclick="loadContent('info_its')">
+            <h1>아이티스란?</h1>
+          </div>
+        </li>
+
+        <li class="sidemenu-item">
+          <div class="sidemenu-item-title" onclick="loadContent('info_year')">
+            <i class="bi bi-chevron-right"></i>
+            <h1>2024년도</h1>
+          </div>
+          <div class="sidemenu-item-content">
+            <ul>
+              <li><h2>- 부원</h2></li>
+              <li><h2>- 일정</h2></li>
+              <li><h2>- 프로젝트</h2></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="sidemenu-item">
+          <div class="sidemenu-item-title">
+            <i class="bi bi-chevron-right"></i>
+            <h1>2023년도</h1>
+          </div>
+          <div class="sidemenu-item-content">
+            <ul>
+              <li><h2>- 부원</h2></li>
+              <li><h2>- 일정</h2></li>
+              <li><h2>- 프로젝트</h2></li>
+            </ul>
+          </div>        
+        </li>
+      </ul>
+    </div>
+    
+    <div class="content" id="content-area">
+
+    </div>
+
+  </div>
 {% endblock %}
