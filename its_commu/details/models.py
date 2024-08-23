@@ -1,7 +1,18 @@
 from django.db import models
 
 # Create your models here.
-class It_prj(models.Model):
+class Its_plan(models.Model):
+    date = models.DateField(primary_key=True)
+    schedule = models.CharField(max_length=100)
+    insert_date = models.DateField(auto_now_add=True)
+    insert_user = models.CharField(max_length=50)
+    deleted = models.CharField(max_length=1)
+
+    def __str__(self):
+        return self.date
+
+
+class Its_prj(models.Model):
     prj_no = models.IntegerField(primary_key=True, null=False)
     member = models.CharField(max_length=255, null=False)
     team = models.CharField(max_length=50, null=False)
