@@ -1,0 +1,125 @@
+/* board.css */
+
+.board {
+  margin: 200px 0;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+aside {
+  margin: 0 145px 0 0;
+  float: left;
+}
+
+.post {
+  width: 955px;
+  float: left;
+  border-top: solid 2px var(--color-black);
+}
+
+.menuA a {
+  color: var( --color-green);
+}
+
+.menuB a:hover, .menuC:hover, .menuC a:hover, .menuC2-1 a:hover{
+  color: var( --color-green);
+} 
+
+.menuA, .menuB {
+  width: 70px;
+  margin: 0 0 25px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menuC {
+  width: 100px;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.menuC.bi-chevron-right {
+  margin: 0 3px 0 0;
+  font-size: 15px;
+}
+
+.menuC2 {
+  position: absolute;
+  top: 100%; /* Position it below menuC */
+  left: 0;
+  display: none;
+  z-index: 1; /* Ensure it is on top of other elements */
+}
+
+.menuC2-1 a{
+  font-size: 18px;
+  color: var(--color-grey2);
+  font-weight: 500;
+}
+
+.menuC2-1:first-child {
+  margin: 10px 0 7px 22px;
+}
+
+.menuC2-1{
+  margin: 0 0 7px 22px;
+}
+
+.post_info {
+  width: 955px;
+  height: 60px;
+  margin: 30px 0 30px 0;
+}
+
+.post_infoA {
+  width: 895px;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 30px 10px 30px;
+}
+
+.post_infoB {
+  width: 895px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 30px 0 30px;
+}
+
+
+.post_infoB span {
+  margin: 0 5px 0 0;
+}
+
+.post_name, .post_time, .post_click {
+  color: var(--color-grey2);
+}
+
+.post_textA {
+  width: 955px;
+  padding: 60px 0 60px 0;
+  border-top: solid 1px var(--color-grey3);
+  border-bottom: solid 1px var(--color-grey3);
+  margin: 0 0 15px 0; 
+}
+
+.post_textB {
+  width: 895px;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 30px 0 30px;
+}
+
+.post_list {
+  width: 90px;
+  height: 25px;
+  border: solid 1px var(--color-black);
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 25px;
+  float: right;
+}
